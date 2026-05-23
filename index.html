@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>{{OWNER_NAME}} | Certified AI Assessment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #FAFAF7;
+      color: #171717;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+    .page {
+      max-width: 460px;
+      margin: 0 auto;
+      padding: 0 22px 40px;
+    }
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 0 11px;
+      border-bottom: 1px solid #ece9e2;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }
+    .dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 999px;
+      background: #171717;
+      flex-shrink: 0;
+    }
+    .tag {
+      font-size: 13px;
+      color: #716f69;
+      white-space: nowrap;
+    }
+    main { padding-top: 18px; }
+    .headline {
+      font-size: 32px;
+      line-height: 1.13;
+      letter-spacing: -0.045em;
+      font-weight: 700;
+      margin-bottom: 7px;
+    }
+    .accent { color: #9b4a2a; }
+    .company {
+      font-family: "Source Serif 4", Georgia, serif;
+      font-style: italic;
+      font-weight: 600;
+      letter-spacing: -0.03em;
+    }
+    .subhead {
+      font-size: 16px;
+      line-height: 1.45;
+      color: #3f3d39;
+      margin-bottom: 14px;
+    }
+    .truth {
+      font-size: 15px;
+      line-height: 1.42;
+      color: #272522;
+      margin: 0 0 11px;
+      padding-left: 13px;
+      border-left: 2px solid #ded9cf;
+    }
+    .truth strong { font-weight: 600; }
+    .pain-list {
+      list-style: none;
+      margin: 0 0 11px;
+      padding: 0;
+      border-top: 1px solid #e6e2da;
+      border-bottom: 1px solid #e6e2da;
+    }
+    .pain-list li {
+      display: flex;
+      gap: 12px;
+      padding: 8px 0;
+      font-size: 14px;
+      line-height: 1.32;
+      color: #302e2a;
+      border-bottom: 1px solid #e6e2da;
+    }
+    .pain-list li:last-child { border-bottom: 0; }
+    .bullet {
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: #9b4a2a;
+      flex-shrink: 0;
+      margin-top: 6px;
+    }
+    .offer {
+      background: #FDF8EE;
+      border: 1px solid #d6aa55;
+      border-radius: 15px;
+      padding: 13px 15px;
+      margin: 0 0 10px;
+    }
+    .offer-label {
+      font-size: 11px;
+      line-height: 1;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #8a6d2f;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .offer p {
+      font-size: 14px;
+      line-height: 1.4;
+      color: #201f1c;
+      margin-bottom: 8px;
+    }
+    .offer p:last-child { margin-bottom: 0; }
+    .offer strong { color: #9b4a2a; font-weight: 700; }
+    .founder {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 0 0;
+      border-top: none;
+    }
+    .avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #e8dfd0, #fffaf0);
+      border: 1px solid #ded9cf;
+      display: grid;
+      place-items: center;
+      color: #9b4a2a;
+      font-weight: 700;
+      font-size: 14px;
+      flex-shrink: 0;
+    }
+    .founder-name {
+      font-size: 13px;
+      font-weight: 600;
+      color: #171717;
+      margin-bottom: 1px;
+    }
+    .founder-role {
+      font-size: 12px;
+      color: #6f6b64;
+      line-height: 1.35;
+    }
+    .cta {
+      display: block;
+      width: 100%;
+      background: #171717;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 14px;
+      padding: 15px 18px;
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin-top: 2px;
+    }
+    .micro {
+      text-align: center;
+      font-size: 13px;
+      color: #8b8780;
+      margin-top: 8px;
+      line-height: 1.5;
+      margin-bottom: 6px;
+    }
+    .below {
+      margin-top: 42px;
+      padding-top: 28px;
+      border-top: 1px solid #ece9e2;
+    }
+    .section-label {
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #8b8780;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    .steps {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .steps li {
+      padding: 14px 0;
+      border-bottom: 1px solid #e6e2da;
+      font-size: 15px;
+      line-height: 1.55;
+      color: #34312c;
+    }
+    .steps strong {
+      display: block;
+      font-size: 15px;
+      color: #171717;
+      margin-bottom: 3px;
+    }
+    footer {
+      padding: 34px 0 0;
+      text-align: center;
+      font-size: 12px;
+      color: #9a958c;
+    }
+    @media (max-width: 380px) {
+      .page { padding-left: 18px; padding-right: 18px; }
+      .headline { font-size: 30px; }
+      .subhead { font-size: 17px; }
+      main { padding-top: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <div class="brand"><span class="dot"></span>Certified AI Assessment</div>
+      <div class="tag">Property Management</div>
+    </header>
+
+    <main>
+      <h1 class="headline"><span class="accent">{{OWNER_NAME}}</span>, you already know where you want <span class="company accent">{{COMPANY_NAME}}</span> to go.</h1>
+
+      <p class="subhead">The question is where the bottlenecks are, and whether AI can actually fix them.</p>
+
+      <p class="truth"><strong>AI isn’t a magic wand.</strong><br>But there are probably parts of your operation moving slower than they should.</p>
+
+      <ul class="pain-list" aria-label="Common operational bottlenecks">
+        <li><span class="bullet"></span><span>After-hours tenant calls turning into tomorrow morning’s problem.</span></li>
+        <li><span class="bullet"></span><span>Lease renewals slipping through manual follow-up.</span></li>
+        <li><span class="bullet"></span><span>Maintenance coordination eating hours your team shouldn’t spend.</span></li>
+      </ul>
+
+      <section class="offer" aria-label="Assessment offer">
+        <div class="offer-label">The offer</div>
+        <p>We identify where AI can realistically recover time and operational efficiency inside your business.</p>
+        <p>If we can’t identify at least <strong>$15,000 in measurable operational upside</strong>, the assessment is free.</p>
+      </section>
+
+      <a class="cta" href="{{CALENDLY_URL}}">Book my 20-minute fit call</a>
+      <p class="micro">No pitch. No prep. If we’re not a fit, I’ll say so on the call.</p>
+
+      <div class="founder">
+        <div class="avatar">JL</div>
+        <div>
+          <div class="founder-name">James Larson</div>
+          <div class="founder-role">Provo, Utah · I build what I recommend</div>
+        </div>
+      </div>
+
+      <section class="below">
+        <div class="section-label">What happens on the call</div>
+        <ul class="steps">
+          <li><strong>We ask about your current operation.</strong> Calls, maintenance, renewals, admin work, reporting, and where your team feels stretched.</li>
+          <li><strong>We look for realistic AI opportunities.</strong> Not every workflow should be automated. We separate useful from distracting.</li>
+          <li><strong>You leave knowing if an assessment makes sense.</strong> If there is not enough upside, we will tell you directly.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>Certified AI Assessment · Built for {{COMPANY_NAME}}</footer>
+  </div>
+</body>
+</html>
