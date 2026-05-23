@@ -50,13 +50,13 @@
       color: #716f69;
       white-space: nowrap;
     }
-    main { padding-top: 18px; }
+    main { padding-top: 20px; }
     .headline {
       font-size: 31px;
-      line-height: 1.13;
+      line-height: 1.14;
       letter-spacing: -0.045em;
       font-weight: 700;
-      margin-bottom: 10px;
+      margin-bottom: 13px;
     }
     .accent { color: #9b4a2a; }
     .company {
@@ -69,7 +69,7 @@
       font-size: 16px;
       line-height: 1.5;
       color: #3f3d39;
-      margin-bottom: 16px;
+      margin-bottom: 19px;
     }
     .truth {
       font-size: 15px;
@@ -82,16 +82,16 @@
     .truth strong { font-weight: 600; }
     .reflection {
       font-size: 15px;
-      line-height: 1.56;
+      line-height: 1.62;
       color: #302e2a;
-      margin: 0 0 16px;
+      margin: 0 0 19px;
     }
     .offer {
       background: #FDF8EE;
       border: 1px solid #d6aa55;
       border-radius: 15px;
-      padding: 14px 15px;
-      margin: 0 0 10px;
+      padding: 16px 16px;
+      margin: 0 0 13px;
     }
     .offer-label {
       font-size: 11px;
@@ -104,22 +104,22 @@
     }
     .offer p {
       font-size: 14px;
-      line-height: 1.42;
+      line-height: 1.45;
       color: #201f1c;
-      margin-bottom: 7px;
+      margin-bottom: 8px;
     }
     .offer p:last-child { margin-bottom: 0; }
     .offer strong { color: #9b4a2a; font-weight: 700; }
     .founder {
       display: flex;
       align-items: center;
-      gap: 12px;
-      padding: 12px 0 0;
+      gap: 14px;
+      padding: 18px 0 0;
       border-top: none;
     }
     .avatar {
-      width: 38px;
-      height: 38px;
+      width: 64px;
+      height: 64px;
       border-radius: 999px;
       border: 1px solid #ded9cf;
       object-fit: cover;
@@ -129,13 +129,13 @@
       background: #f3eee5;
     }
     .founder-name {
-      font-size: 13px;
+      font-size: 15px;
       font-weight: 600;
       color: #171717;
       margin-bottom: 1px;
     }
     .founder-role {
-      font-size: 12px;
+      font-size: 14px;
       color: #6f6b64;
       line-height: 1.35;
     }
@@ -147,8 +147,8 @@
       text-align: center;
       text-decoration: none;
       border-radius: 14px;
-      padding: 15px 18px;
-      font-size: 16px;
+      padding: 16px 18px;
+      font-size: 17px;
       font-weight: 600;
       letter-spacing: -0.01em;
       margin-top: 2px;
@@ -156,11 +156,12 @@
     .micro {
       text-align: center;
       font-size: 13px;
-      color: #8b8780;
-      margin-top: 8px;
+      color: #5f5b54;
+      margin-top: 9px;
       line-height: 1.5;
       margin-bottom: 6px;
     }
+    .micro strong { color: #171717; font-weight: 700; }
     .below {
       margin-top: 42px;
       padding-top: 28px;
@@ -178,19 +179,39 @@
       list-style: none;
       margin: 0;
       padding: 0;
+      display: grid;
+      gap: 10px;
     }
     .steps li {
-      padding: 14px 0;
-      border-bottom: 1px solid #e6e2da;
-      font-size: 15px;
-      line-height: 1.55;
+      background: #ffffff;
+      border: 1px solid #ece9e2;
+      border-radius: 15px;
+      padding: 16px 16px;
+      font-size: 14px;
+      line-height: 1.5;
       color: #34312c;
+    }
+    .step-icon {
+      font-size: 23px;
+      line-height: 1;
+      margin-bottom: 8px;
     }
     .steps strong {
       display: block;
       font-size: 15px;
       color: #171717;
-      margin-bottom: 3px;
+      margin-bottom: 4px;
+    }
+    .steps .arrow {
+      background: transparent;
+      border: none;
+      border-radius: 0;
+      padding: 0;
+      text-align: center;
+      color: #b99a55;
+      font-size: 18px;
+      line-height: 1;
+      margin: -1px 0;
     }
     footer {
       padding: 34px 0 0;
@@ -202,7 +223,7 @@
       .page { padding-left: 18px; padding-right: 18px; }
       .headline { font-size: 29px; }
       .subhead { font-size: 17px; }
-      main { padding-top: 18px; }
+      main { padding-top: 20px; }
     }
   </style>
 </head>
@@ -226,8 +247,8 @@
         <p>If we can’t find at least <strong>$15,000 in measurable upside</strong>, the assessment is 100% free.</p>
       </section>
 
-      <a class="cta" href="{{CALENDLY_URL}}">Book my 20-minute fit call</a>
-      <p class="micro">No pitch. No prep. If we’re not a fit, I’ll say so on the call.</p>
+      <a class="cta" href="{{CALENDLY_URL}}">Book a 20-minute call</a>
+      <p class="micro"><strong>Book a call.</strong> Let’s see if there’s a fit.</p>
 
       <div class="founder">
         <img class="avatar" src="https://i.imgur.com/KCMgg6k.jpeg" alt="James Larson">
@@ -240,9 +261,23 @@
       <section class="below">
         <div class="section-label">What happens on the call</div>
         <ul class="steps">
-          <li><strong>We ask about your current operation.</strong> Calls, maintenance, renewals, admin work, reporting, and where your team feels stretched.</li>
-          <li><strong>We look for realistic AI opportunities.</strong> Not every workflow should be automated. We separate useful from distracting.</li>
-          <li><strong>You leave knowing if an assessment makes sense.</strong> If there is not enough upside, we will tell you directly.</li>
+          <li>
+            <div class="step-icon">🔍</div>
+            <strong>We look at the operation.</strong>
+            We talk through the workflows that feel slow, manual, or reactive, then identify where AI would and would not fit.
+          </li>
+          <li class="arrow" aria-hidden="true">↓</li>
+          <li>
+            <div class="step-icon">⚙️</div>
+            <strong>We map the practical opportunities.</strong>
+            We separate useful systems from distractions and outline what would actually save time, improve handoffs, or reduce lost revenue.
+          </li>
+          <li class="arrow" aria-hidden="true">↓</li>
+          <li>
+            <div class="step-icon">📊</div>
+            <strong>You leave with the next step.</strong>
+            If there is a fit, we explain the assessment and how ROI would be tracked. If not, we will tell you directly.
+          </li>
         </ul>
       </section>
     </main>
