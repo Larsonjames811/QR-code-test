@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="robots" content="noindex, nofollow" />
-  <title>{{OWNER_NAME}} | Certified AI Assessment</title>
+  <title>{{OWNER_NAME}} | Certified AI Assessment Co.</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
@@ -80,30 +80,14 @@
       border-left: 2px solid #ded9cf;
     }
     .truth strong { font-weight: 600; }
-    .pain-list {
-      list-style: none;
-      margin: 0 0 11px;
-      padding: 0;
+    .reflection {
+      font-size: 15px;
+      line-height: 1.43;
+      color: #302e2a;
+      margin: 0 0 12px;
+      padding: 12px 0;
       border-top: 1px solid #e6e2da;
       border-bottom: 1px solid #e6e2da;
-    }
-    .pain-list li {
-      display: flex;
-      gap: 12px;
-      padding: 8px 0;
-      font-size: 14px;
-      line-height: 1.32;
-      color: #302e2a;
-      border-bottom: 1px solid #e6e2da;
-    }
-    .pain-list li:last-child { border-bottom: 0; }
-    .bullet {
-      width: 7px;
-      height: 7px;
-      border-radius: 999px;
-      background: #9b4a2a;
-      flex-shrink: 0;
-      margin-top: 6px;
     }
     .offer {
       background: #FDF8EE;
@@ -137,17 +121,15 @@
       border-top: none;
     }
     .avatar {
-      width: 36px;
-      height: 36px;
+      width: 38px;
+      height: 38px;
       border-radius: 999px;
-      background: linear-gradient(135deg, #e8dfd0, #fffaf0);
       border: 1px solid #ded9cf;
-      display: grid;
-      place-items: center;
-      color: #9b4a2a;
-      font-weight: 700;
-      font-size: 14px;
+      object-fit: cover;
+      object-position: center;
       flex-shrink: 0;
+      display: block;
+      background: #f3eee5;
     }
     .founder-name {
       font-size: 13px;
@@ -230,34 +212,30 @@
 <body>
   <div class="page">
     <header class="topbar">
-      <div class="brand"><span class="dot"></span>Certified AI Assessment</div>
+      <div class="brand"><span class="dot"></span>Certified AI Assessment Co.</div>
       <div class="tag">Property Management</div>
     </header>
 
     <main>
       <h1 class="headline"><span class="accent">{{OWNER_NAME}}</span>, you already know where you want <span class="company accent">{{COMPANY_NAME}}</span> to go.</h1>
 
-      <p class="subhead">The question is where the bottlenecks are, and whether AI can actually fix them.</p>
+      <p class="subhead">The only question is where the bottlenecks are, and whether AI can actually fix them.</p>
 
-      <p class="truth"><strong>AI isn’t a magic wand.</strong><br>But there are probably parts of your operation moving slower than they should.</p>
+      <p class="truth"><strong>AI isn’t a magic wand.</strong></p>
 
-      <ul class="pain-list" aria-label="Common operational bottlenecks">
-        <li><span class="bullet"></span><span>After-hours tenant calls turning into tomorrow morning’s problem.</span></li>
-        <li><span class="bullet"></span><span>Lease renewals slipping through manual follow-up.</span></li>
-        <li><span class="bullet"></span><span>Maintenance coordination eating hours your team shouldn’t spend.</span></li>
-      </ul>
+      <p class="reflection">But you can probably already think of a few workflows inside <span class="company accent">{{COMPANY_NAME}}</span> that feel slower, more manual, or more reactive than they should.</p>
 
       <section class="offer" aria-label="Assessment offer">
         <div class="offer-label">The offer</div>
-        <p>We identify where AI can realistically recover time and operational efficiency inside your business.</p>
-        <p>If we can’t identify at least <strong>$15,000 in measurable operational upside</strong>, the assessment is free.</p>
+        <p>We identify where AI can realistically recover operational efficiency inside your business.</p>
+        <p>If we can’t identify at least <strong>$15,000 in measurable operational upside</strong>, the entire assessment is free.</p>
       </section>
 
       <a class="cta" href="{{CALENDLY_URL}}">Book my 20-minute fit call</a>
       <p class="micro">No pitch. No prep. If we’re not a fit, I’ll say so on the call.</p>
 
       <div class="founder">
-        <div class="avatar">JL</div>
+        <img class="avatar" src="https://i.imgur.com/KCMgg6k.jpeg" alt="James Larson">
         <div>
           <div class="founder-name">James Larson</div>
           <div class="founder-role">Provo, Utah · I build what I recommend</div>
@@ -274,7 +252,7 @@
       </section>
     </main>
 
-    <footer>Certified AI Assessment · Built for {{COMPANY_NAME}}</footer>
+    <footer>Certified AI Assessment Co. · Built for {{COMPANY_NAME}}</footer>
   </div>
 </body>
 </html>
